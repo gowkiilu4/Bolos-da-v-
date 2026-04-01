@@ -1,0 +1,326 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9ccbd3;
+  padding: 15px 40px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 60px;
+}
+
+.logo-area p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6a00;
+}
+
+/* NAV */
+.nav-area {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ff6a00;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9ccbd3;
+  padding: 15px 50px;
+}
+
+/* LOGO */
+.logo-text {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff6a00;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ff6a00;
+  font-weight: bold;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* EFEITO UNDERLINE BONITO */
+.menu li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ff6a00;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+.header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* ===== HERO ===== */
+
+.btn-hero {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #ff6a00;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.titulo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.banner {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #ccc;
+  padding: 60px;
+  border-radius: 20px;
+}
+
+.subtitulo {
+  font-size: 14px;
+}
+
+.diferenciais {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+}
+
+.item {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+.hero {
+  margin-bottom: 40px;
+}
+
+/* ===== PRODUTOS ===== */
+
+.produtos {
+  padding: 20px;
+  text-align: center;
+    margin-bottom: 40px;
+}
+.produtos:before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #FF6E00;
+  margin: 0 auto 20px;
+}
+
+.secao-titulo {
+  font-size: 24px;
+  color: #ff6a00;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #9ccbd3;
+  width: 180px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card a {
+  display: inline-block;
+  background-color: #ff9d5c;
+  padding: 8px 12px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.favoritos::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 2px;
+  background-color: #FF6E00;
+  margin: 0 auto 20px;
+}
+.favoritos {
+  padding: 30px 0;
+     margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.titulo-fav {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff6a00;
+}  
+
+/* BOTÃO VER MAIS */
+.ver-mais {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #f39c5c;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #9ccbd3;
+  padding: 25px 40px;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
+.footer-center p {
+  margin-top: 8px;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* LINHA DOS ÍCONES */
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* TAMANHO CERTO DOS ÍCONES */
+.icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+/* COLUNAS */
+.footer-left,
+.footer-center,
+.footer-right {
+  width: 33%;
+}
+
+/* ESQUERDA */
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img-footer {
+  width: 130px;
+}
+
+/* CENTRO */
+.footer-center {
+  text-align: center;
+}
+
+.icon {
+  width: 25px;
+  margin: 0 5px;
+}
+
+/* DIREITA */
+.footer-right {
+  text-align: right;
+}
+
+/* TEXTOS */
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
